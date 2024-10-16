@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Youssef Mohamed" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Systems Converter</title>
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Systems Converter</h1>
+        <img src="imgs/th.jpg.crdownload" alt="" />
+      </div>
+    </header>
+    <div class="landing">
+      <p>
+        Designed By: Youssef Mohamed <br />
+        Under the supervision of Dr. Noha
+      </p>
+      <div class="container">
+        <form id="converterForm">
+          <label>Choose The System</label>
+          <select id="system" name="system">
+            <option value="">-----</option>
+            <option value="bi">Binary</option>
+            <option value="de">Decimal</option>
+            <option value="hex">HexaDecimal</option>
+            <option value="oc">Octal</option>
+          </select>
+          <br />
+          <label id="Ltx" for="tx">Write The Number</label>
+          <input id="tx" type="text" />
+
+          <input id="sub" type="submit" value="Convert" />
+        </form>
+        <div id="result"></div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
